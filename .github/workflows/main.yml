@@ -22,6 +22,7 @@ jobs:
 
     - name: Run tests
       run: |
+        export PYTHONPATH=$PWD
         pytest
 
     - name: Login to GHCR
